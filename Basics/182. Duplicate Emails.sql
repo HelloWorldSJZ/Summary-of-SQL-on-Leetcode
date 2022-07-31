@@ -8,3 +8,6 @@ JOIN Person b
  
  SELECT email FROM person group by email having count(*) > 1
  -- having count用于分组后过滤的条件
+
+-- 底层逻辑和586. Customer Placing the Largest Number of Orders很像，都是找一列里面重复的row
+-- 本题是寻找重复2次以上的，586是找重复最多的
