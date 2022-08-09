@@ -1,7 +1,7 @@
-select name from salesperson 
+select s.name from salesperson s
 where sales_id not in 
     (
-        Select sales_id from orders o where o.com_id = 
+        Select o.sales_id from orders o where o.com_id = 
         (select c.com_id from company c where name = "RED")
     )
         
