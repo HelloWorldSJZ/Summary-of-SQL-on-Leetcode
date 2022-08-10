@@ -6,3 +6,4 @@ order by travelled_distance desc, name
 
 ifnull(expression_1, expression_2)
 如果expression_1是错的，return expression_2
+必须是left join，保证每个user都有对应的distance
