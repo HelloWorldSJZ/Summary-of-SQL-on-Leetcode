@@ -5,4 +5,4 @@ select customer_id
 from customer group by customer_id
 having count(distinct product_key) = (select count(*) from product)
 
-foreign key
+# foreign key限制了所有parent table的数字都会在product table里面出现
