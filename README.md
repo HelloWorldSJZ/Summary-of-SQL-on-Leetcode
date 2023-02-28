@@ -16,8 +16,9 @@
     | 2        | 1           | 2                                                          |
 
 
-select actor_id, director_id, count(timestamp) from actordirector group by actor_id, director_id;
-      actor_id | director_id | count(timestamp) |
+select actor_id, director_id, count(timestamp) from actordirector group by actor_id, director_id
+
+     actor_id | director_id | count(timestamp) |
     | -------- | ----------- | ---------------- |
     | 1        | 1           | 3                |
     | 1        | 2           | 2                |
