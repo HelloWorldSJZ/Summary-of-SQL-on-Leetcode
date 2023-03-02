@@ -40,4 +40,6 @@ select actor_id, director_id, count(timestamp) from actordirector group by actor
   DATE_FORMAT(pay_date, '%Y-%m')
 
 
-4. 
+
+4. Report the max value if there is a tie
+  Rank () over (partition xxx order by desc) ...
