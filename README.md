@@ -42,4 +42,5 @@ select actor_id, director_id, count(timestamp) from actordirector group by actor
 
 
 4. Report the max value if there is a tie
+
   Rank () over (partition xxx order by desc) ...
