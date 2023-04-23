@@ -23,3 +23,10 @@ ORDER BY ctr DESC, ad_id
 
 
 IFNULL(exp1,exp2) means that if exp1 is null, replace with exp2; otherwise return exp1.
+
+
+select ad_id, 
+    ifnull(round(100*sum(action = 'Clicked')/sum(action <> 'Ignored'), 2), 0) as ctr
+from ads
+group by ad_id
+order by ctr desc, ad_id;
