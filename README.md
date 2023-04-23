@@ -4,6 +4,7 @@
 
 1. The Difference between Aggregation function xx over (partition by) and Group by:
   Details in having 
+  
   select actor_id, director_id, count(timestamp) over (partition by actor_id, director_id) from actordirector 
      actor_id | director_id | count(timestamp) over (partition by actor_id, director_id) |
     | -------- | ----------- | ---------------------------------------------------------- |
@@ -16,7 +17,9 @@
     | 2        | 1           | 2                                                          |
 
 <br>
-select actor_id, director_id, count(timestamp) from actordirector group by actor_id, director_id
+select actor_id, director_id, count(timestamp) from actordirector 
+
+group by actor_id, director_id
 
      actor_id | director_id | count(timestamp) |
     | -------- | ----------- | ---------------- |
@@ -47,4 +50,5 @@ select actor_id, director_id, count(timestamp) from actordirector group by actor
   
 <br>
 5. The sequence of execution 
+
   From -- Join -- where -- group by -- select -- having -- order by -- limit/offset
