@@ -53,3 +53,10 @@ group by actor_id, director_id
 5. The sequence of execution 
 
   From -- Join -- where -- group by -- select -- having -- order by -- limit/offset
+  
+<br>  
+6. CASE WHEN + ENUM type --> Use avg to calculate the rate
+
+see 1322,
+
+
