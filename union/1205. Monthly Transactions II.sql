@@ -17,3 +17,28 @@ from tab1
 group by month, country
 
 Dont calculate the count and amount before union. The columns would be different for union.
+
+
+refer: https://leetcode.com/problems/monthly-transactions-ii/solutions/1367877/simplest-mysql-solution-with-detailed-explanation/
+
+id	country	state	amount	month
+101	US	approved	1000	2019-05
+103	US	approved	3000	2019-06
+105	US	approved	5000	2019-06
+
+
+
+trans_id	country	state	amount	month
+102	US	chargeback	2000	2019-05
+101	US	chargeback	1000	2019-06
+105	US	chargeback	5000	2019-09
+
+
+
+id	country	state	amount	month
+101	US	approved	1000	2019-05
+103	US	approved	3000	2019-06
+105	US	approved	5000	2019-06
+102	US	chargeback	2000	2019-05
+101	US	chargeback	1000	2019-06
+105	US	chargeback	5000	2019-09
