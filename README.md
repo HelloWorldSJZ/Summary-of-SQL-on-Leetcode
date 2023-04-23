@@ -15,7 +15,7 @@
     | 2        | 1           | 2                                                          |
     | 2        | 1           | 2                                                          |
 
-
+<br>
 select actor_id, director_id, count(timestamp) from actordirector group by actor_id, director_id
 
      actor_id | director_id | count(timestamp) |
@@ -27,24 +27,24 @@ select actor_id, director_id, count(timestamp) from actordirector group by actor
 
 
 
-
+<br>
 2. How to display '0' for Null values after joinning :
   
   COUNT(expression) could be used because it does not take account if expression is null
   
   
   
-
+<br>
 3. 从 YYYY-MM-DD里面提取YYYY-MM：
   
   DATE_FORMAT(pay_date, '%Y-%m')
 
 
-
+<br>
 4. Report the max value if there is a tie
 
   Rank () over (partition xxx order by desc) ...
   
-
+<br>
 5. The sequence of execution 
   From -- Join -- where -- group by -- select -- having -- order by -- limit/offset
