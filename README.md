@@ -35,6 +35,7 @@ group by actor_id, director_id
 2. How to display '0' for Null values after joinning :
   
   COUNT(expression) could be used because it does not take account if expression is null
+  COALESCE(referee_id,0) changes the null in referee_id to 0. 
   
   
   
